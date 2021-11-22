@@ -41,9 +41,7 @@ const App = () => {
     }
   }
 
-  // validation if beer is null , then return loading page
-
-
+ 
   const filteredBeers=beers.filter(beer=> {
     const beerNameLowerCase=beer.name.toLowerCase();
 
