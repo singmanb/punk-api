@@ -47,11 +47,11 @@ const App = () => {
 
     if(!beerNameLowerCase.includes(searchText)){
       return false;
-    } else if(highABV && (beer.abv>6)){
+    } else if(highABV && (beer.abv<6)){
       return false;
     } else if (classicRange && (beer.first_brewed.split("/")[1]> 2010)) {
       return false;
-    } else if(acidic && (beer.ph < 4)){
+    } else if(acidic && (beer.ph > 4)){
       return false;
     }
     return true;
